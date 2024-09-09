@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: fixed;
+    /* Torna o header fixo na tela */
+    top: 0;
+    /* Fixa na parte superior da tela */
+    width: 100%;
+    height: 70px;
+    /* Faz o header ocupar toda a largura da tela */
+    z-index: 1000;
+    /* Garante que o header fique sobre outros elementos */
+}
+
+
+.logo h1 {
+    margin: 0;
+    margin-left: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li p {
+    color: white;
+    text-decoration: none;
+}
+
+/* Adiciona espaço no topo para compensar o header fixo */
+main {
+    padding-top: 0; /* Ajuste conforme a altura do header */
+}
+
+.featured {
+
+    text-align: center;
+}
+
+.featured-media {
+    background-color: #ddd;
+    margin-bottom: 20px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+    .featured-media {
+        max-width: 70%; /* Ajuste conforme necessário */
+    }
+}
+
+
+.news {
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+}
+
+.news h2 {
+    margin-top: 100px;
+    font-size: 250%;
+}
+
+.news-items {
+    display: flex;
+}
+
+.news-item {
+    background-color: #eee;
+    flex: 1;
+    aspect-ratio: 16 / 9;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.view-more-container {
+    display: flex; /* Usa flexbox para o alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    /*height: 100px; /* Altura do contêiner, ajustável conforme o layout desejado */
+}
+
+.view-more {
+    text-decoration: underline;
+    color: blue;
+}
+
+.games {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.games h2{
+    margin-top: 100px;
+    font-size: 250%;
+}
+
+.latest-games {
+   display: flex;
+}
+
+.latest-game{
+    background-color: #eee;
+    padding: 10px;
+    flex: 1;
+    aspect-ratio: 16 / 9;
+    max-width: 300px;
+    margin-right: 30px;
+}
+
+.latest-games button {
+    padding: 5px 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
