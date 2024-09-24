@@ -35,7 +35,7 @@ nav ul {
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-right: 30px;
+    margin-right: 100px;
 }
 
 nav ul li {
@@ -76,6 +76,15 @@ main {
     text-decoration: underline;
 }
 
+.closeIcon.material-icons {
+    display: none;
+}
+
+.menu-toggle {
+    margin-right: 100px;
+}
+
+
 @media (min-width: 1024px) {
     .featured-media {
         max-width: 70%;
@@ -83,30 +92,13 @@ main {
     }
 
     .menu-toggle {
-        position: fixed;
-        transform: translateY(-100%);
-        transition: transform 0.2s;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 99;
-        background: black;
-        color: white;
-        list-style: none;
-        padding-top: 4rem;
+        display: none;
     }
+
 }
 
 @media (max-width: 1024px) {
 
-    /* Make the menu-toggle button visible */
-
-    .closeIcon {
-        display: none;
-    }
-
-    /* Hide the menu initially */
     .menu {
         position: fixed;
         transform: translateY(-100%);
