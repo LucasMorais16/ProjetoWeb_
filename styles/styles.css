@@ -7,6 +7,7 @@ body {
 
 header {
     background-color: #333;
+    transition: transform 0.2s;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -23,9 +24,8 @@ header {
 }
 
 #header.scrollHide {
-    display: none;
+    transform: translateY(-110%)
 }
-
 
 .logo h1 {
     margin: 0;
@@ -59,7 +59,7 @@ nav ul li p {
 
 /* Adiciona espaço no topo para compensar o header fixo */
 main {
-    padding-top: 0;
+    padding-top: 50px;
     /* Ajuste conforme a altura do header */
 }
 
@@ -88,7 +88,6 @@ main {
     margin-right: 100px;
 }
 
-
 @media (min-width: 1024px) {
     .featured-media {
         max-width: 70%;
@@ -105,17 +104,18 @@ main {
 
     .menu {
         position: fixed;
-        transform: translateY(-100%);
+        display: block;
+        transform: translateY(-110%);
         transition: transform 0.2s;
+        block-size: 360px;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: 99;
-        background: black;
+        background: rgba(0, 0, 0, 0.622);
         color: white;
-        list-style: none;
-        padding-top: 4rem;
+        padding-top: 0;
     }
 
     nav ul li {
@@ -129,7 +129,7 @@ main {
     .menuItem {
         display: block;
         margin: 2rem 4rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: white;
         text-decoration: none;
     }
