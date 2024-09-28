@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: 500;
     margin: 0;
     padding: 0;
 }
@@ -106,13 +107,11 @@ main {
         position: fixed;
         display: block;
         transform: translateY(-110%);
-        transition: transform 0.2s;
         block-size: 360px;
+        margin-right: 50;
         top: 0;
-        left: 0;
-        right: 0;
+        right: 40px;
         bottom: 0;
-        z-index: 99;
         background: rgba(0, 0, 0, 0.622);
         color: white;
         padding-top: 0;
@@ -124,11 +123,12 @@ main {
 
     .showMenu {
         transform: translateY(0);
+        transition: transform 0.2s;
     }
 
     .menuItem {
         display: block;
-        margin: 2rem 4rem;
+        margin: 2rem 3rem;
         font-size: 1.5rem;
         color: white;
         text-decoration: none;
